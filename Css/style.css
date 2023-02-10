@@ -1,0 +1,677 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+* {
+    /* font-family: 'Poppins',sans-serif; */
+    font-family: 'inter';
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    position: relative;
+    text-decoration: none;
+}
+.fa:hover{
+    border: 0;
+    padding: 10px 10px;
+    border-radius: 100px;
+    background: lightblue;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: rgb(243, 4, 4);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 0.4s;
+    border: 0;
+}
+
+a:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: rgb(243, 4, 4);
+    top: 0;
+    border: 0;
+    color:silver;
+    bottom: 0;
+    left: 0;
+    transition: all 0.4s ease-in-out;
+}
+.btn{
+    position: relative;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: rgb(56, 4, 243);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 0.4s;
+}
+
+.btn:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: rgb(56, 4, 243);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 0.4s ease-in-out;
+}
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.navbar-toggler {
+    border: 0;
+}
+
+.navbar {
+    border-bottom: 1px solid rgb(241, 234, 234);
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-weight: 900 !important;
+    font-size: 20px;
+}
+
+.icon_box li a {
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.header_ p {
+    font-size: 10px;
+}
+
+.NoN h1 {
+    color: rgb(243, 238, 238);
+    transform: rotate(270deg);
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-top: 2em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hom {
+    background: rgb(243, 238, 238);
+    height: 300px;
+    position: relative;
+}
+
+/* .pencil_hand{
+    width: 200px;
+    height: 300px;
+    position: relative;
+} */
+.hom_2 {
+    /* background: url("..//Image/"); */
+    position: relative;
+}
+
+.mini {
+    padding-top: 4em;
+}
+
+.hom_2_empty {
+    position: absolute;
+    max-width: 400px;
+    height: 240px;
+    left: 4em;
+    top: -0.30em;
+    right: 0;
+    /* top: 4em; */
+    background: rgb(243, 238, 238);
+    z-index: -1;
+}
+
+.ice {
+    width: 200px;
+    height: 100px;
+    transform: rotate(330deg);
+}
+
+.ice_section {
+    background: rgb(243, 238, 238);
+    height: 250px;
+}
+.bb_g{
+    position: relative;
+    z-index: 1;
+    height: 400px;
+}
+.first_{
+    height: 300px;
+}
+
+/* .div_empty{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    left: 0;right: 0;  
+    bottom: 0;
+    background:rgb(243, 238, 238);
+    z-index: -1;
+} */
+.fa-solid{
+    padding: 15px 15px;
+    border: 2px solid rgb(204, 187, 187);
+    border-radius: 100%;
+}
+.btn_fa{
+   border: 2px solid rgb(204, 187, 187);
+   border-radius: 100%;
+}
+.btn_read_more{
+    color: white;
+    padding: 8px 20px;
+    outline: 1px solid white;
+    margin-top: 3em;
+    border-radius: 20px;
+}
+.gift_{
+    position: relative;
+}
+#poly_{
+    background: url("..//Image/Poly-removebg-preview.png");
+    box-shadow: 0px 2px 2px 4px black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#Alpha{
+    background: url("..//Image/Alpa_.png");
+    box-shadow: 0px 2px 2px 4px black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#baby{ background: url("..//Image/Baby_-removebg-preview.png");
+    box-shadow: 0px 2px 2px 4px black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.empty_gift{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+background: url("..//Image/Gift_-removebg-preview.png");
+box-shadow: 0px 2px 2px 4px black;
+background-size: cover;
+background-position: center;
+}
+.empty_school{
+    position: absolute;
+    box-shadow: 0px 2px 2px 4px black;
+    width: 100%;
+    height: 100%;
+background: url("..//Image/Student_-removebg-preview.png");
+background-size: 70%;
+background-repeat: no-repeat;
+background-position: center;
+}
+#row_danger{
+position: relative;
+}
+/* .row_danger{
+    position:  absolute;
+    width: 100%;
+    height: 100%;
+    top: 1em;
+    bottom: 0;
+    right: 0;left: 5em;
+    background: url("..//Image/Real_cpa-removebg-preview.png");
+    background-size:50%;
+background-repeat: no-repeat;
+background-position: center;
+} */
+.row_danger{
+    position: absolute;
+    width: 500px;
+    height: auto;
+   right: 0em;
+   top: 3em;
+}
+.bgg-info{
+    background: linear-gradient( rgba(216, 204, 204, 0.55), rgba(170, 155, 155, 0.9)),url("..//Image/Web.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.schedul{
+    padding: 11px 36px;
+    margin-top: 30px;
+    border: 2px solid rgba(29, 26, 26, 0.55);
+    border-radius: 25px;
+    color: rgba(29, 26, 26, 0.55);
+    font-weight: bold;
+}
+.form-control{
+    background: none;
+    border: none;
+    border-bottom: 1px solid darkslategrey;
+    border-radius: 0;
+}
+.Package_::after{
+    content: '03';
+    font-size: 10px;
+  position: absolute;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.Mock_::after{
+    content: '05';
+    font-size: 10px;
+  position: absolute;
+  font-weight: bold;
+  margin-right: 6px;
+}
+.Branding_::after{
+    content: '02';
+    font-size: 10px;
+  position: absolute;
+  font-weight: bold;
+}
+.Art_::after{
+    content: '05';
+    font-size: 10px;
+  position: absolute;
+  font-weight: bold;
+}
+.Animation_::after{
+    content: '11';
+    font-size: 10px;
+  position: absolute;
+  font-weight: bold;
+}
+.all_::after{
+    content: '26';
+    font-size: 10px;
+  position: absolute;
+  font-weight: bold;
+}
+.btn_alll{
+    padding: 15px 25px; width: 170px; border:2px solid white; color: white; border-radius: 25px;
+}
+.btn_all{
+    padding: 15px 25px; width: 170px; border:2px solid darkslategrey; border-radius: 25px;
+}
+.navbar-nav{
+text-align: center;
+margin-top: 0em;
+line-height: 4em;
+}
+.nav-link{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+    border-bottom: 1px solid gray;
+}
+.offcanvas-body{
+    background: linear-gradient(rgba(8, 8, 241,0.45),rgba(224, 148, 7,0.45)), url("..//Image/Godess-removebg-preview.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+  .btn-close:hover{
+        transform: rotate(240deg);
+    }
+.navbar{
+    box-shadow: 0px 1px 1px 2px rgb(243, 238, 238);
+    transition: all 1.2s ease;
+}
+.font_:hover {
+    box-shadow: -6px -6px 2px 2px rgb(5, 230, 43);
+    transition: all 0.4s;
+  }
+  .overla{
+  position: relative;
+  overflow: hidden;
+  height: 450px;
+  }
+  .layover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( rgba(5, 5, 233,0.55), rgba(8, 8, 252,0.99));
+    top: 0;
+    left: 0;
+    right: 0;
+    /* opacity: -1; */
+    bottom: 0;
+    cursor: pointer;
+  }
+  /* .layover:hover{
+    opacity: 1;
+  } */
+  .overla img{
+    cursor: pointer;
+  transition: all 1.5s ease;
+    height: 100%;
+    width: 100%;
+  }
+  .overla:hover img{
+    transform: scale(1.5);
+  }
+  .jerry{
+    position: absolute;
+     opacity: -1;  
+     background: linear-gradient( rgba(243, 238, 238,0.5), rgba(8, 8, 252,0.9));
+     padding-top: 2em;
+     height: 100%;
+     cursor: pointer;
+     transition: all 0.60s ease-in-out;
+  }
+  .jerry h1{
+    color: white;
+  }
+  .jerry:hover{
+    opacity: 1;
+  }
+
+
+
+
+@media (min-width: 992px) {
+    .brading{
+        position: relative;
+        right: 7em;
+    }
+    .header_ h6::after{
+    width: 100px;
+    height: 2px;
+    background: blue;
+    position: absolute;
+    content: '';
+    margin-left: 6em;
+    margin-bottom: 0;
+    transform: translateY(9px);
+}
+    .bottle{
+        margin-bottom: -10em;
+    }
+    .hy h1{
+        width: 400px;
+        font-weight: 900;
+    }
+    .bgg-info{
+        position: relative;
+        z-index: 1;
+    }
+    .bbgg_info{
+        position: absolute;
+        width: 250px;
+        height: 320px;
+        top: 0;
+       left: 0;
+        bottom: 0;
+        background: linear-gradient( rgba(247, 235, 235,0.1),rgba(247, 235, 235,0.2));
+        box-shadow: 0px 1px 2px 1px black;
+        z-index: -1;
+    }
+    #more p{
+        width: 510px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .empty_school{
+        top: 0.10em;
+        left: 0em;
+    }
+    .first_ h2{
+        width: 390px;
+    }
+    .bbg_empty{
+        position: absolute;
+        max-width: 800px;
+        height: 355px;
+        background: rgb(241, 237, 237);
+        top: 128.20em;
+        left: 1.55em;
+        /* right: 10em; */
+        /* bottom: 7em; */
+        bottom: 0em;
+        
+    }
+    .bb_g p{
+        width: 520px;
+    }
+    .mini_empty {
+        height: 400px;
+        position: relative;
+        bottom: 9.35em;
+    }
+    
+    .img_mini {
+        position: relative;
+        width: 400px;
+        height: 450px;
+        background:rgb(243, 238, 238) ;
+        bottom: 15em;
+        left: 46px;
+        z-index: -1;
+    }
+    /* .img_mini{
+        height: 500px;
+        bottom: 20em;
+    } */
+    .empty_mini {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url("..//Image/Table-removebg-preview.png");
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center;
+        top: 3em;
+        left: 1.45em;
+    }
+
+    /* .mini_empty{
+        left: 4em;
+    } */
+    .bn_icon {
+        display: flex;
+    }
+
+    .header_ h1 {
+        font-size: 60px;
+        line-height: 1em;
+        width: 400px;
+        font-weight: 900;
+    }
+
+    .Img_goddess img {
+        position: relative;
+        top: 5.60em;
+        bottom: 0;
+        left: 10em;
+        /* margin-bottom:0; */
+        max-width: 400px;
+    }
+
+    .Img_goddess {
+        position: relative;
+        /* padding-right: -8em; */
+        padding-right: 4em;
+
+    }
+
+    .empty_Img_goddess {
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        background: rgb(243, 238, 238);
+        top: 0;
+        right: 1.55em;
+        bottom: 0;
+        z-index: -1;
+        /* margin-right: 4em; */
+    }
+
+    .header_ {
+        position: relative;
+        padding-left: 2em;
+        padding-top: 5em;
+    }
+
+    .NoN {
+        position: absolute;
+        bottom: 0;
+        top: -16.30em;
+        right: 9em;
+    }
+
+    .NoN h1 {
+        color: rgb(243, 238, 238);
+        font-size: 90px;
+        transform: rotate(270deg);
+    }
+
+    .hand_pencil {
+        vertical-align: middle;
+        left: 6em;
+        top: 4em;
+        /* height: 600px; */
+    }
+
+    .tape {
+        position: relative;
+        bottom: 10em;
+        width: 250px;
+        height: 400px;
+    }
+
+    .hand_pencil {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url("..//Image/Pencil-removebg-preview.png");
+        background-repeat: no-repeat;
+    }
+
+    .div_empty {
+        position: absolute;
+        width: 100%;
+        height: 250px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgb(243, 238, 238);
+        z-index: -1;
+    }
+    .hyy{
+        padding-left: 3em;
+    }
+    .hyyy{
+        padding-left: 7em;
+    }
+    .hyyy h1{
+        width: 500px;
+    }
+    .cold{
+        /* /* background: transparent; */
+        color: transparent; 
+        position: relative;
+        z-index: 999; 
+        border: 0;
+        right: 26em;
+        width: 50px;
+    }
+    .iconss{
+        background: transparent;
+      
+        color: transparent;
+        /* z-index: 999; */
+        /* width: 100px; */
+        height: 40px;
+        border: 0;
+        border: 0;
+
+    }
+
+}
+/* .navbar-toggler:hover{
+    transform: rotate(260deg);
+    content: '-';
+} */
+
+
+@media (max-width: 570px) {
+    .bottle{
+        margin-bottom: -8em;
+    }
+    .cold{
+        display: none;
+    }
+    .btn-close{
+        margin-left: auto;
+    }
+    .btn-close:hover{
+        transform: rotate(260deg);
+    }
+    #more p{
+       text-align: start;
+    }
+    #more h1{
+        text-align: start;
+    }
+    .mini_empty{
+        background:rgb(243, 238, 238) ;
+    }
+    #home {
+        padding-top: 25px;
+        /* margin-top: 30px; */
+    }
+
+    .navbar {
+        margin-bottom: 0;
+    }
+
+    .Img_goddess {
+        padding-top: 0;
+    }
+    .bb_g{
+        background: rgb(243, 238, 238) ;
+    }
+    #row_danger{
+        z-index: 2;
+    }
+    .row_danger{
+        z-index: -1;
+    }
+}
